@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Janji Jiwa Company</title>
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="navbar-fixed">
+    <nav class="#bcaaa4 brown lighten-3">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="img/brand_logo-1625027779Janji-Jiwa-480x160.png" height="64px"></a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">About Us</a></li>
+                <li><a href="badges.html">Clients</a></li>
+                <li><a href="badges.html">Services</a></li>
+                <li><a href="badges.html">Portofolio</a></li>
+                <li><a href="badges.html">Contact US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- akhir Navbar -->
+<!-- side Nav -->
+<ul class="sidenav" id="mobile-nav">
+    <li><a href="sass.html">About Us</a></li>
+    <li><a href="badges.html">Clients</a></li>
+    <li><a href="badges.html">Services</a></li>
+    <li><a href="badges.html">Portofolio</a></li>
+    <li><a href="badges.html">Contact US</a></li>
+</ul>
+<!-- Akhir sideNav -->
+<!-- Slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/2.png">
+                <div class="caption left-align">
+                <h3>Segelas untuk petani!</h3>
+                <h5 class="light grey-text text-lighten-3">yaitu janji kami untuk selalu memberdayakan petani kopi di Indonesia.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/3.png">
+                <div class="caption center-align">
+                <h3>Segelas untuk mitra!</h3>
+                <h5 class="light grey-text text-lighten-3">yaitu komitmen kami terhadap mitra, terutama para mitra Kopi Janji Jiwa.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/download.png">
+                <div class="caption right-align">
+                <h3>Segelas untuk teman sejiwa!</h3>
+                <h5 class="light grey-text text-lighten-3">yaitu komitmen kami untuk mengutamakan kualitas produk, pelayanan, dan suasana.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+<!-- Akhir Slider -->
+<!-- About Us -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <h3 class="center light grey-text text-darken-3">About Us</h3>
+            <div class="col m6 light">
+                <h5>Tentang Kami</h5>
+                <p>Janji Jiwa menghadirkan pengalaman kedai kopi 'Grab & Go' yang mengadopsi konsep fresh-to-cup dan menyajikan pilihan kopi Lokal Indonesia. Kami menawarkan cita rasa klasik dalam produk kopi. Janji Jiwa juga telah berhasil menemukan cara untuk menghasilkan produk berkualitas dengan harga terjangkau dengan mencari dan memanggang Kopi Indonesia pilihan lokal terbaik. Visi kami adalah menjadikan Kopi Janji Jiwa sebagai merek kedai kopi yang berada di setiap sudut kota dengan membawa budaya kedai kopi Indonesia ke dunia.</p>
+            </div>
+            <div class="col m6 light">
+                <p>Variant Menu 50+</p>
+                <div class="progress">
+                    <div class="determinate brown" style="width: 50%"></div>
+                </div>
+                <p>Outlets 900+</p>
+                <div class="progress">
+                    <div class="determinate brown" style="width: 90%"></div>
+                </div>
+                <p>Cities 100+</p>
+                <div class="progress">
+                    <div class="determinate brown" style="width: 70%"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Akhir About client -->
+<!-- Parallax -->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/jiwa.png"></div>
+
+    <div class="container clients">
+        <h3 class="center light white-text">Our Clients</h3>
+            <div class="row">
+                <div class="col m4 s12 center">
+                    <img src="img/shopee-food-logo-F37D8AD493-seeklogo.com-removebg-preview.png">
+                </div>
+                <div class="col m4 s12 center">
+                    <img src="img/gofood1-300x277.png">
+                </div>
+                <div class="col m4 s12 center">
+                    <img src="img/grabfood-vector-logo-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Akhir Parallax client -->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        //sidebar
+        const sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+        //slider
+        const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider,{
+            indicators: false,
+            height: 500,
+            transition: 600,
+            interval: 5000
+        });
+        //parallax
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+    </script>
+</body>
+</html>
